@@ -1,0 +1,8 @@
+test\java\TestingTests.class
+main\java\pageObjects\BuscadorBlock.class
+main\java\TheWebDriver.class
+test\java\BuscadorBlockTests.class
+main\java\ModelPageFW.class
+main\java\TheWebDriver$1.class
+main\java\TheWebDriver$BrowserClearUp.class
+main\java\pageObjects\XPATHduplexHomePage.class
