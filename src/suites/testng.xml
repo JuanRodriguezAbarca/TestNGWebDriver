@@ -12,11 +12,11 @@
             <class name="test.java.BuscadorBlockTests"/>
         </classes>
     </test>
-    <!--<test name="Second Test">-->
-        <!--<classes>-->
-            <!--<class name="test.java.BuscadorBlockTests"/>-->
-        <!--</classes>-->
-    <!--</test>-->
+    <test name="Second Test">
+        <classes>
+            <class name="test.java.BuscadorBlockTests"/>
+        </classes>
+    </test>
     <!--<test name="Third Test">-->
         <!--<classes>-->
             <!--<class name="test.java.BuscadorBlockTests"/>-->

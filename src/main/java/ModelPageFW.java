@@ -10,7 +10,11 @@ import org.testng.annotations.*;
  */
 public class ModelPageFW {
 
-    protected WebDriver driver = TheWebDriver.getTheDriver();
+//    TheWebDriver theWebDriver = new TheWebDriver();
+//    protected WebDriver driver = theWebDriver.getTheDriver();
+
+        protected WebDriver driver = TheWebDriver.getTheDriver();
+
 
     protected BuscadorBlock buscador = new BuscadorBlock(driver);
     protected XPATHduplexHomePage xpatHduplexHomePage = new XPATHduplexHomePage(driver);
@@ -30,6 +34,6 @@ public class ModelPageFW {
     @AfterSuite
     public void shutDown() {
         System.out.println("Shutting down the browser.\n\nSuite finished");
-        driver.quit();
+        TheWebDriver.quitTheDriver();
     }
 }

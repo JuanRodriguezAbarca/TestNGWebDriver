@@ -2,12 +2,11 @@ package main.java;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.UnreachableBrowserException;
-import org.openqa.selenium.safari.SafariDriver;
-
-import java.lang.reflect.Constructor;
 
 /**
  * Created by Juan_Rodriguez on 1/27/2016.
@@ -44,6 +43,9 @@ class TheWebDriver {
                 return new ChromeDriver();
             case "ie":
                 return new InternetExplorerDriver();
+            case "edge":
+                DesiredCapabilities capabilities = DesiredCapabilities.edge();
+                return new EdgeDriver(capabilities);
             default:
                 return new FirefoxDriver();
         }
@@ -61,7 +63,7 @@ class TheWebDriver {
 
     private static class BrowserClearUp implements Runnable {
         public void run() {
-            quitTheDriver();
+            driver.quit();
         }
     }
 }
