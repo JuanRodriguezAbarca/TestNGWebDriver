@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite for run from testng.xml">
+    <listeners>
+        <listener class-name="main.java.ListenerClass"></listener>
+    </listeners>
     <test name="Test Test">
     <classes>
         <class name="test.java.TestingTests"/>
@@ -12,11 +15,11 @@
             <class name="test.java.BuscadorBlockTests"/>
         </classes>
     </test>
-    <test name="Second Test">
-        <classes>
-            <class name="test.java.BuscadorBlockTests"/>
-        </classes>
-    </test>
+    <!--<test name="Second Test">-->
+        <!--<classes>-->
+            <!--<class name="test.java.BuscadorBlockTests"/>-->
+        <!--</classes>-->
+    <!--</test>-->
     <!--<test name="Third Test">-->
         <!--<classes>-->
             <!--<class name="test.java.BuscadorBlockTests"/>-->

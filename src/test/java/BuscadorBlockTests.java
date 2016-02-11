@@ -44,9 +44,9 @@ public class BuscadorBlockTests extends ModelPageFW {
         return new Object[][]{
                 {"pollas", "Venta", "Cuenca", "4", 60000, 90000, 60, 70},
                 {"Adosado", "Venta", "Cuenca", "4", 80000, 90000, 80, 200},
-                {"Adosado", "Venta", "Cuenca", "4", 50000, 60000, 100, 300},
-                {"Adosado", "Venta", "Cuenca", "4", 20000, 30000, 50, 800000000},
-                {"Adosado", "Venta", "Cuenca", "4", 10000, 90000, 200, 900}
+//                {"Adosado", "Venta", "Cuenca", "4", 50000, 60000, 100, 300},
+//                {"Adosado", "Venta", "Cuenca", "4", 20000, 30000, 50, 800000000},
+//                {"Adosado", "Venta", "Cuenca", "4", 10000, 90000, 200, 900}
         };
     }
 
