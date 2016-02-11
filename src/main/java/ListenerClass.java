@@ -4,7 +4,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.Augmenter;
 import org.openqa.selenium.remote.ScreenshotException;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
@@ -25,7 +24,6 @@ public class ListenerClass extends TestListenerAdapter {
     WebDriver driver = TheWebDriver.getTheDriver();
 
     @Override
-//    @AfterMethod(alwaysRun = true)
     public void onTestFailure(ITestResult result) {
         System.out.println(result.getStatus());
         if (!result.isSuccess()) {
