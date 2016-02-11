@@ -63,7 +63,7 @@ public class ListenerClass extends TestListenerAdapter {
 
     private String getPath(String nameTest) throws IOException {
         File directory = new File(".");
-        return directory.getCanonicalPath() + "\\screenShots\\" + getFileName(nameTest);
+        return directory.getCanonicalPath() + "/screenShots/" + getFileName(nameTest);
     }
 }
 
